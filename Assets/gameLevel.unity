@@ -1594,7 +1594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 2124472714}
-  mouseSensitivity: 3
+  mouseSensitivity: 2
 --- !u!114 &962902002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2793,7 +2793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 686c9cce40fb761488867d6173616e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 5
   jumpForce: 5
   rb: {fileID: 2124472715}
 --- !u!136 &2124472711
