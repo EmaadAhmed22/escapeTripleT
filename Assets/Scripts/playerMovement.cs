@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.S))
             z = -1;
 
-        Vector3 move = new Vector3(x, 0, z) * speed;
+        Vector3 move = (transform.forward * z + transform.right * x) * speed;
         move.y = rb.velocity.y;
         rb.velocity = move;
 
