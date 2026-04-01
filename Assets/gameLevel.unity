@@ -1590,12 +1590,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 962901999}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4f9c68b98d3db345b70e7b0d362b9db, type: 3}
+  m_Script: {fileID: 11500000, guid: 049a2555a9e040946ae6460c1c69f53a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 100
-  playerBody: {fileID: 0}
-  xRotation: 0
+  target: {fileID: 2124472714}
+  mouseSensitivity: 3
 --- !u!114 &962902002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2774,6 +2773,7 @@ GameObject:
   - component: {fileID: 2124472712}
   - component: {fileID: 2124472711}
   - component: {fileID: 2124472710}
+  - component: {fileID: 2124472715}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -2790,16 +2790,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2124472709}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00fce29c4bfa3a8459c349d2f052d9a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 686c9cce40fb761488867d6173616e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  gravity: -9.81
-  jumpForce: 2
-  groundDistance: 0.4
-  characterController: {fileID: 0}
-  velocity: {x: 0, y: 0, z: 0}
-  isGrounded: 0
+  speed: 50
+  jumpForce: 5
+  rb: {fileID: 2124472715}
 --- !u!136 &2124472711
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2891,6 +2887,33 @@ Transform:
   - {fileID: 962902000}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &2124472715
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124472709}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &2145397659
 PrefabInstance:
   m_ObjectHideFlags: 0
