@@ -1,0 +1,122 @@
+[33mcommit 1dbcf7ef7d0afdd148b2baa6a3249a2378f24ab3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmap[m[33m, [m[1;31morigin/map[m[33m)[m
+Author: Emaad Ahmed <emaadtaherahmed22@gmail.com>
+Date:   Mon Mar 30 12:00:26 2026 -0500
+
+    map added
+
+[33mcommit 784b4071910329664f41943c6650884997d457ff[m
+Merge: 22f97ff 8d0e17c
+Author: Ross Modur <rossmodur13@gmail.com>
+Date:   Mon Mar 30 11:46:05 2026 -0500
+
+    Merge pull request #7 from EmaadAhmed22/coin
+    
+    added a coin
+
+[33mcommit 8d0e17cd98bd6ee7d987827381c01cfb392e529f[m[33m ([m[1;31morigin/coin[m[33m)[m
+Author: RossModur <s116640@ltisdschools.net>
+Date:   Mon Mar 30 11:45:42 2026 -0500
+
+    added a coin
+
+[33mcommit 22f97ff808aac0a4d38bdd080f7ab67b723c62d3[m
+Merge: beb8267 5daf730
+Author: Ross Modur <rossmodur13@gmail.com>
+Date:   Mon Mar 30 11:31:04 2026 -0500
+
+    Merge pull request #6 from EmaadAhmed22/key
+    
+    Key
+
+[33mcommit 5daf730ab4c0d7884ab56fd62ffdf957ecdd9919[m[33m ([m[1;31morigin/key[m[33m)[m
+Author: RossModur <s116640@ltisdschools.net>
+Date:   Mon Mar 30 11:30:25 2026 -0500
+
+    added a key
+
+[33mcommit f04b658501157c6e362a3fb3896595def687dad4[m
+Author: RossModur <s116640@ltisdschools.net>
+Date:   Mon Mar 30 11:25:13 2026 -0500
+
+    added key stuff
+
+[33mcommit beb82677d7dfe43170c0cc5cf8fd7ccc8d9c0669[m
+Merge: 6e406a7 0a73d3a
+Author: Ross Modur <rossmodur13@gmail.com>
+Date:   Mon Mar 30 11:12:15 2026 -0500
+
+    Merge pull request #5 from EmaadAhmed22/gameLevel
+    
+    added assets cuh
+
+[33mcommit 0a73d3a328efc511791ed54261068d78dca95750[m
+Author: RossModur <s116640@ltisdschools.net>
+Date:   Mon Mar 30 11:11:36 2026 -0500
+
+    added assets cuh
+
+[33mcommit 6e406a7f10cf0f4d1c4d1430386b9b0e7070ca62[m
+Merge: 2f73f0a 69db9c6
+Author: Nav Shrivastava <32820767+nav21@users.noreply.github.com>
+Date:   Mon Mar 30 10:56:36 2026 -0500
+
+    Merge pull request #4 from EmaadAhmed22/endScreen
+    
+    initial death screen
+
+[33mcommit 69db9c6b6f284eb74261674d69cf15fd0ec57f7b[m[33m ([m[1;31morigin/endScreen[m[33m)[m
+Author: Nav Shrivastava <navsh001@gmail.com>
+Date:   Mon Mar 30 10:56:08 2026 -0500
+
+    initial death screen
+
+[33mcommit 2f73f0a6521a319b59711dd0eec313b2a1859150[m
+Merge: a24591c d11c010
+Author: Ross Modur <rossmodur13@gmail.com>
+Date:   Mon Mar 30 10:50:53 2026 -0500
+
+    Merge pull request #3 from EmaadAhmed22/winScreen
+    
+    added winScreen
+
+[33mcommit d11c0106dcc115945f8e40fa4d0f72a07f3b821a[m[33m ([m[1;31morigin/winScreen[m[33m)[m
+Author: RossModur <s116640@ltisdschools.net>
+Date:   Mon Mar 30 10:50:02 2026 -0500
+
+    added winScreen
+
+[33mcommit a24591cf54a92519295b79028eb3e9a549c3b181[m
+Merge: 50822b0 d09d5d1
+Author: Ross Modur <rossmodur13@gmail.com>
+Date:   Thu Mar 26 11:59:57 2026 -0500
+
+    Merge pull request #2 from EmaadAhmed22/startmenu
+    
+    created start menu no scripts
+
+[33mcommit d09d5d1645ce85399163bc5760c465aada5ebc1a[m[33m ([m[1;31morigin/startmenu[m[33m)[m
+Author: RossModur <s116640@ltisdschools.net>
+Date:   Thu Mar 26 11:58:33 2026 -0500
+
+    created start menu no scripts
+
+[33mcommit 50822b02d319c783dace7203e2e443cbe46aeea8[m
+Merge: 232be75 5361e7e
+Author: Ross Modur <rossmodur13@gmail.com>
+Date:   Thu Mar 26 11:40:07 2026 -0500
+
+    Merge pull request #1 from EmaadAhmed22/startmenu
+    
+    added a cube to test branch
+
+[33mcommit 5361e7e0a72db6d50abce66c1c0c079bc72324c8[m
+Author: RossModur <s116640@ltisdschools.net>
+Date:   Thu Mar 26 11:38:29 2026 -0500
+
+    added a cube to test branch
+
+[33mcommit 232be755791908e5f09a72cd661b86d2c4412f3a[m
+Author: Emaad Ahmed <emaadtaherahmed22@gmail.com>
+Date:   Thu Mar 26 11:28:39 2026 -0500
+
+    New Triple T Repo Baby!
