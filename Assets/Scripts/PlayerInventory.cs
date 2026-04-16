@@ -6,7 +6,12 @@ public class PlayerInventory : MonoBehaviour
 {
     public List<string> keys = new List<string>();
     public Text legacyText;
+    public Text NumOfCoins;
 
+
+    public List<string> powerUps = new List<string>();
+
+    public int coins = 0; 
     
     public void AddKey(string keyName)
     {
@@ -19,4 +24,14 @@ public class PlayerInventory : MonoBehaviour
     {
         return keys.Contains(keyName);
     }
+    public void CoinAdd()
+    {
+        coins++;
+        NumOfCoins.text = coins.ToString();
+
+    }
+    /*public int HasCoin(string keyName)
+    {
+        return coins;
+    }*/
 }

@@ -22,4 +22,8 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("winScreen");
     }
+    public void LoadShopScreen()
+    {
+        SceneManager.LoadScene("ShopScene");
+    }
 }
