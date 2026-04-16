@@ -1,36 +1,85 @@
 using UnityEngine;
+using UnityEngine.UI; 
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 5f;
+    public float walkSpeed = 5f;
+    public float sprintSpeed = 10f;
     public float jumpForce = 5f;
     public Rigidbody rb;
+
+    public Image staminaFill; 
+    public float maxStamina = 100f;
+    public float staminaDepletionRate = 40f;
+    public float staminaRegenRate = 15f;
+    public float regenDelay = 2f;
+
+    private float currentStamina;
+    private float currentSpeed;
+    private float staminaRegenTimer;
+
 
     void Start()
     {
         rb.freezeRotation = true;
+        currentStamina = maxStamina;
+        currentSpeed = walkSpeed;
     }
 
     void Update()
     {
-        float x = 0, z = 0;
+        HandleMovement();
+        HandleStamina();
+    }
 
-        if (Input.GetKey(KeyCode.D))
+    void HandleMovement()
+    {
+        float x = 0, z = 0;
+        if (Input.GetKey(KeyCode.D)) 
             x = 1;
-        if (Input.GetKey(KeyCode.A)) 
+        if (Input.GetKey(KeyCode.A))
             x = -1;
         if (Input.GetKey(KeyCode.W)) 
             z = 1;
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S)) 
             z = -1;
 
-        Vector3 move = (transform.forward * z + transform.right * x) * speed;
+        bool isMoving = x != 0 || z != 0;
+
+        if (Input.GetKey(KeyCode.LeftShift) && isMoving && currentStamina > 0)
+        {
+            currentSpeed = sprintSpeed;
+            currentStamina -= staminaDepletionRate * Time.deltaTime;
+            staminaRegenTimer = 0f;
+        }
+        else
+        {
+            currentSpeed = walkSpeed;
+            if (currentStamina < maxStamina)
+            {
+                staminaRegenTimer += Time.deltaTime;
+                if (staminaRegenTimer >= regenDelay)
+                {
+                    currentStamina += staminaRegenRate * Time.deltaTime;
+                }
+            }
+        }
+
+        currentStamina = Mathf.Clamp(currentStamina, 0, maxStamina);
+
+        Vector3 move = (transform.forward * z + transform.right * x) * currentSpeed;
         move.y = rb.velocity.y;
         rb.velocity = move;
 
         if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(rb.velocity.y) < 0.01f)
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
     }
+
+    void HandleStamina()
+    {
+        if (staminaFill != null)
+        {
+            staminaFill.fillAmount = currentStamina / maxStamina;
+        }
+    }
 }
-
-
