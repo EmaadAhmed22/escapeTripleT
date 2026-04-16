@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI; 
 
-public class PlayerMovement : MonoBehaviour
+public class playerMovement : MonoBehaviour
 {
     public float walkSpeed = 5f;
     public float sprintSpeed = 10f;
@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private float currentSpeed;
     private float staminaRegenTimer;
 
+    private bool disableM = false;
 
     void Start()
     {
@@ -28,8 +29,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        HandleMovement();
-        HandleStamina();
+        if (!disableM)
+        {
+            HandleMovement();
+            HandleStamina();
+        }   
     }
 
     void HandleMovement()
@@ -81,5 +85,10 @@ public class PlayerMovement : MonoBehaviour
         {
             staminaFill.fillAmount = currentStamina / maxStamina;
         }
+    }
+
+
+    public void disable() {
+        disableM = true;
     }
 }

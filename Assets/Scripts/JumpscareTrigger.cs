@@ -1,35 +1,20 @@
 using UnityEngine;
-using UnityEngine.AI;
 using System.Collections;
 
-public class PathFollowing : MonoBehaviour
+public class JumpscareTrigger : MonoBehaviour
 {
-    public Transform player;
-    public NavMeshAgent agent;
-    public GameManager manager;
-
-
-    public GameObject playerCamera; // FPS camera
-    public GameObject scareCamera;  // Camera in monster's face
+    public GameObject playerCamera; 
+    public GameObject scareCamera;  
     public AudioSource scareSound;
-    public playerMovement movement; // Script to disable movement
-    public CameraFollow camera; // Script to disable movement
-
+    public GameObject playerController; 
     public float shakeDuration = 0.5f;
     public float shakeIntensity = 0.2f;
-
-
-    void Update() { 
-        agent.destination = player.position; 
-    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player Hit!");
             StartCoroutine(TriggerScare());
-            
         }
     }
 
@@ -41,8 +26,7 @@ public class PathFollowing : MonoBehaviour
         scareSound.Play();
 
         // 2. Disable Movement
-        movement.disable();
-        camera.disable();
+        if (playerController != null) playerController.SetActive(false);
 
         // 3. Camera Shake
         Vector3 originalPos = scareCamera.transform.localPosition;
@@ -56,9 +40,5 @@ public class PathFollowing : MonoBehaviour
         scareCamera.transform.localPosition = originalPos;
 
         // 4. Optional: End game or revert after delay
-
-        manager.LoadEndScreen();
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
     }
 }
