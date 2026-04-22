@@ -4855,11 +4855,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4778207775316443013, guid: b2f6995147c73a8478520f668eeda380,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.036365595
+      objectReference: {fileID: 0}
     - target: {fileID: 4779021863926589715, guid: b2f6995147c73a8478520f668eeda380,
         type: 3}
       propertyPath: m_Name
       value: exitLadder
       objectReference: {fileID: 0}
+    - target: {fileID: 4974972570487340674, guid: b2f6995147c73a8478520f668eeda380,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ccd095f795c03943983e91237af6e15, type: 2}
     - target: {fileID: 5845950813627085010, guid: b2f6995147c73a8478520f668eeda380,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -4925,6 +4935,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6480238313019180956, guid: b2f6995147c73a8478520f668eeda380,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ccd095f795c03943983e91237af6e15, type: 2}
     - target: {fileID: 8459834298535449446, guid: b2f6995147c73a8478520f668eeda380,
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
