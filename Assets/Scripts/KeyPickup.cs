@@ -6,7 +6,7 @@ public class KeyPickup : MonoBehaviour
 {
 
     public string keyName = "key";
-
+    public AudioSource keyPickup;
     
 
 
@@ -18,6 +18,7 @@ public class KeyPickup : MonoBehaviour
             PlayerInventory inventory = other.GetComponent<PlayerInventory>();
             inventory.AddKey(keyName);
             Destroy(gameObject);
+            keyPickup.Play();
         }
     }
 
