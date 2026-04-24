@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/startMenu.unity
     guid: c9621e0ef26cc5c4ba779426a55f7962
   - enabled: 1
+    path: Assets/difficultyMenu.unity
+    guid: 95bd5ae22f5b77b418920b26df8b7ff8
+  - enabled: 1
     path: Assets/gameLevel.unity
     guid: cc22cec65d6935049a4436f5384b7e69
   - enabled: 1
@@ -18,3 +21,4 @@ EditorBuildSettings:
     path: Assets/winScreen.unity
     guid: d068b8e7f63c4f24ca0c55ba1a7231e5
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

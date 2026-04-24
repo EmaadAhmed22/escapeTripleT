@@ -1,8 +1,25 @@
+using System.Drawing;
+using Unity.VisualScripting;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public PathFollowing path;
+    public static int speed = 25;
+    public static int acceleration = 30;
+    public Text text;
+    public static string cooolor = "4FF106";
+
+
+
+    private void Start()
+    {
+        DontDestroyOnLoad(this.gameObject);
+
+    }
     public void LoadGameLevel()
     {
         SceneManager.LoadScene("gameLevel");
@@ -10,6 +27,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadStartMenu()
     {
+        
         SceneManager.LoadScene("startMenu");
     }
 
@@ -26,4 +44,40 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("ShopScene");
     }
+
+    public void LoadDiffScreen()
+    {
+        SceneManager.LoadScene("difficultyMenu");
+    }
+
+    public void LoadStartMenuWithDiff(string diff)
+    {
+        if (diff == "easy")
+        {
+            speed = 25;
+            acceleration = 30;
+        }
+        if (diff == "medium")
+        {
+            speed = 35;
+            acceleration = 50;
+
+        }
+        if (diff == "hard")
+        {
+            speed = 50;
+            acceleration = 80;
+
+        }
+        SceneManager.LoadScene("startMenu");
+    }
+
+    public void changeColor(string color) {
+
+        cooolor = color;
+ 
+
+        
+    }
+
 }
