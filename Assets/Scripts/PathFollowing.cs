@@ -18,7 +18,12 @@ public class PathFollowing : MonoBehaviour
     public float shakeDuration = 0.5f;
     public float shakeIntensity = 0.2f;
 
+    void Start()
+    {
+        agent.speed = GameManager.speed;
+        agent.acceleration = GameManager.acceleration;
 
+    }
     void Update() { 
         agent.destination = player.position; 
     }
