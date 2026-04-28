@@ -204,18 +204,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1783296217}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: LoadStartMenuWithDiff
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: hard
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1783296217}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: changeColor
         m_Mode: 5
         m_Arguments:
@@ -224,6 +212,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: '#FF0000'
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1783296217}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadStartMenuWithDiff
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: hard
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &37899818
@@ -349,18 +349,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1783296217}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: LoadStartMenuWithDiff
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: medium
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1783296217}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: changeColor
         m_Mode: 5
         m_Arguments:
@@ -369,6 +357,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: '#FF8500'
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1783296217}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadStartMenuWithDiff
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: medium
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &121612636
@@ -1213,18 +1213,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1783296217}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: LoadStartMenuWithDiff
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: easy
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1783296217}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: changeColor
         m_Mode: 5
         m_Arguments:
@@ -1233,6 +1221,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: '#4FF106'
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1783296217}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadStartMenuWithDiff
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: easy
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1425522497
@@ -1377,7 +1377,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 722022dfd3404644d8eed5ba1d8e2ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: {fileID: 0}
   text: {fileID: 0}
 --- !u!4 &1783296218
 Transform:

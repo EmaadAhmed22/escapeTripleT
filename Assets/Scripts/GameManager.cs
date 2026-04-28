@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public PathFollowing path;
     public static int speed = 25;
     public static int acceleration = 30;
     public Text text;
@@ -69,7 +68,7 @@ public class GameManager : MonoBehaviour
             acceleration = 80;
 
         }
-        SceneManager.LoadScene("startMenu");
+        LoadStartMenu();
     }
 
     public void changeColor(string color) {
