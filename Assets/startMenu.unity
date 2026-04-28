@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 121612637}
   - component: {fileID: 121612636}
   - component: {fileID: 121612635}
+  - component: {fileID: 121612638}
   m_Layer: 5
   m_Name: startButton
   m_TagString: Untagged
@@ -252,6 +253,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 121612633}
   m_CullTransparentMesh: 1
+--- !u!114 &121612638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121612633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 299a050c9ddfbad4bb37dbefd863c1d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  negro: {fileID: 759467306}
 --- !u!1 &536719762
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,7 +384,7 @@ GameObject:
   - component: {fileID: 759467306}
   m_Layer: 5
   m_Name: difficultyColor
-  m_TagString: Untagged
+  m_TagString: tuff
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -743,6 +757,7 @@ GameObject:
   - component: {fileID: 1177224367}
   - component: {fileID: 1177224366}
   - component: {fileID: 1177224365}
+  - component: {fileID: 1177224368}
   m_Layer: 5
   m_Name: diffButton
   m_TagString: Untagged
@@ -864,6 +879,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177224363}
   m_CullTransparentMesh: 1
+--- !u!114 &1177224368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177224363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 299a050c9ddfbad4bb37dbefd863c1d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  negro: {fileID: 759467306}
 --- !u!1 &1405175431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1153,7 +1181,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 722022dfd3404644d8eed5ba1d8e2ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: {fileID: 0}
   text: {fileID: 759467306}
 --- !u!4 &1783296218
 Transform:
