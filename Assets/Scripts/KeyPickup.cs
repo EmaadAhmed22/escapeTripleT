@@ -5,7 +5,7 @@ using UnityEngine;
 public class KeyPickup : MonoBehaviour
 {
 
-    public AudioSource keyPickup;
+    public AudioSource audioSource;
     
 
 
@@ -17,7 +17,7 @@ public class KeyPickup : MonoBehaviour
             PlayerInventory inventory = other.GetComponent<PlayerInventory>();
             inventory.AddKey();
             Destroy(gameObject);
-            keyPickup.Play();
+            audioSource.Play();
         }
     }
 

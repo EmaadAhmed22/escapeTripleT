@@ -16,6 +16,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject playerCamera;
     public GameObject scareCamera;
     public AudioSource scareAudio;
+    public AudioSource keyAudio;
     public AudioSource footstepsAudio;
     public playerMovement movementScript;
     public CameraFollow cameraFollowScript;
@@ -35,17 +36,26 @@ public class SpawnManager : MonoBehaviour
             Instantiate(ventPrefab, spawnPoint.position, spawnPoint.rotation);
         }
 
-        //if (keySpawnPoints.Length > 0)
-        //{
-        //    for (int i = 0; i < 3; i++)
-        //    {
-        //        if (keySpawnPoints.Length > i)
-        //        {
-        //            Transform spawnPoint = keySpawnPoints[Random.Range(0, keySpawnPoints.Length)];
-        //            Instantiate(keyPrefab, spawnPoint.position, spawnPoint.rotation);
-        //        }
-        //    }
-        //}
+        if (keySpawnPoints.Length > 0)
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                if (keySpawnPoints.Length > i)
+                {
+                    Transform spawnPoint = keySpawnPoints[Random.Range(0, keySpawnPoints.Length)];
+                    GameObject key = Instantiate(keyPrefab, spawnPoint.position, spawnPoint.rotation);
+
+                    KeyPickup keyy = key.GetComponent<KeyPickup>();
+
+                    if (keyy != null)
+                    {
+                        keyy.audioSource = keyAudio;
+                    }
+                }
+            }
+        }
+
+        
 
 
         if (playerSpawnPoints.Length > 0)

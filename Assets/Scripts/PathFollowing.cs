@@ -41,6 +41,11 @@ public class PathFollowing : MonoBehaviour
     IEnumerator TriggerScare()
     {
         // 1. Switch Camera
+        agent.speed = 0;
+        agent.angularSpeed = 0;
+        agent.acceleration = 0;
+
+
         playerCamera.SetActive(false);
         scareCamera.SetActive(true);
         scareSound.Play();
@@ -48,6 +53,7 @@ public class PathFollowing : MonoBehaviour
         // 2. Disable Movement
         movement.disable();
         camera.disable();
+
 
         // 3. Camera Shake
         Vector3 originalPos = scareCamera.transform.localPosition;
