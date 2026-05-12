@@ -5,7 +5,6 @@ using UnityEngine;
 public class KeyPickup : MonoBehaviour
 {
 
-    public string keyName = "key";
     public AudioSource keyPickup;
     
 
@@ -16,7 +15,7 @@ public class KeyPickup : MonoBehaviour
         {
             Debug.Log("Key Picked Up!");
             PlayerInventory inventory = other.GetComponent<PlayerInventory>();
-            inventory.AddKey(keyName);
+            inventory.AddKey();
             Destroy(gameObject);
             keyPickup.Play();
         }

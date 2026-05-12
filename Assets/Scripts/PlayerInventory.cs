@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    public List<string> keys = new List<string>();
+    public int keys;
     public Text legacyText;
     public Text NumOfCoins;
 
@@ -13,16 +13,16 @@ public class PlayerInventory : MonoBehaviour
 
     public int coins = 0; 
     
-    public void AddKey(string keyName)
+    public void AddKey()
     {
-        keys.Add(keyName);
-        Debug.Log("Collected key: " + keyName);
-        legacyText.text = keys.Count.ToString();
+        keys++;
+        Debug.Log("Collected key");
+        legacyText.text = keys.ToString();
     }
 
-    public bool HasKey(string keyName)
+    public bool HasKey()
     {
-        return keys.Contains(keyName);
+        return keys >= 1;
     }
     public void CoinAdd()
     {
