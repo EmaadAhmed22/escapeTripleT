@@ -79,4 +79,11 @@ public class GameManager : MonoBehaviour
         
     }
 
+
+    public void loadWinScreen()
+    {
+        SceneManager.LoadScene("winScreen");
+
+    }
+
 }
