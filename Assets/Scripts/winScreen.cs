@@ -16,6 +16,8 @@ public class winScreen : MonoBehaviour
             if (inventory.keys == 3)
             {
                 SceneManager.LoadScene("winScreen");
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
             }
         }
        
